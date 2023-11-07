@@ -1,3 +1,12 @@
+body{
+    background-image: url(background.jpg);
+    background-size: 1500px;
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-color: lightpink;
+    border: 4px solid black;
+}
 .inventory{
     position: fixed;
     bottom: 0;
@@ -13,7 +22,7 @@
     grid-template-columns: repeat(3, 72px);
     margin-bottom: 10px;
 }
-.upgrades, .items button{
+.upgrades, .Ellas button{ 
     display: grid;
     grid-template-columns: repeat(1, 96px);
     margin-bottom: 10px;
