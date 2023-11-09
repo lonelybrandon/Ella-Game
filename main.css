@@ -76,6 +76,13 @@ body{
 .shop{
     display: none;
 }
+.Sad,
+.Happy,
+.Confused,
+.Suprised,
+.Disapointed {
+  display: none;
+}
 
 .purchasebuttons{
     display: grid;
@@ -144,4 +151,12 @@ button{
     font-weight: bold;
     text-decoration: underline;
 }
-
+.Sad,
+.Happy,
+.Confused,
+.Suprised,
+.Disapointed {
+  position: absolute; 
+  top: 0px; 
+  left: 550px;
+}
