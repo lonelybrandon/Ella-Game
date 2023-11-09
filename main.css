@@ -4,12 +4,51 @@ body{
     background-position-x: left;
     background-position-y: top;
     background-repeat: no-repeat;
+    background-color: peachpuff;
+}
+.stick{
+    left: 0px;
+    bottom: 75px;
+    position: absolute;
+
+}
+#Title{
+    font-family: cursive;
+    color: black;
+    font-size: 100px;
+    margin-left: 10px;
+    margin-top: 0px;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+#Menu{
+    position: fixed;
+    top: 0;
+    right: 130px;
+    padding: 10px;
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: pink;
+    border-right-width: 4px;
+    border-left-width: 4px;
 }
 #click{
-    background-color: skyblue;
+    background-image: url(click\ background.jpg);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 50px;
+    font-weight: bold;
+    width: 300px;
+    border-radius: 15px;
+    height: 170px;
+    color: white;
+    margin-left: 1550px;
+    margin-top: -50px;
 }
 #buy{
     background-image: url(Buy\ background.jpg);
@@ -17,8 +56,8 @@ body{
     color: lavender;
     font-size: 50px;
     font-weight: bold;
-    margin-left: 1470px;
-    margin-top: 300px;
+    margin-left: 1550px;
+    margin-top: 50px;
     width: 300px;
     border-radius: 5px;
     height: 170px;
@@ -50,12 +89,12 @@ body{
 }
 button{
     background-color: lightpink;
-
+    font-family: cursive;
     font-size: 13px;
-    width: 100px;
+    width: 300px;
     height: 100px;
     padding: 20px;
-    border-radius: 50%;
+    border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     -webkit-transition-duration: 0.3s;
@@ -84,5 +123,25 @@ button{
     background-color: darkgreen;
     color: white;
     font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.purchasebuttons{
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+#return{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#buttons{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#PurchaseE{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
