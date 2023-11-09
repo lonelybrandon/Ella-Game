@@ -32,7 +32,7 @@ $(document).ready(function(){
         changeInventory();
         changeMarket();
     });
-    $("#purchase10").click(function(){//add a purchase 100, and more if needed
+    $("#purchase10").click(function(){
         points -= 10;
         pointsplus += 10;
         pointPrice += 10;
@@ -45,13 +45,13 @@ $(document).ready(function(){
         changeInventory();
         changeMarket();
     });
-
-    $("#buyEllas1").click(function(){//this should be the new autoclicker.
+    $("#buyEllas1").click(function(){
         points -= Ellas1Price;
         autopointPlus++;
         autopointSpeed += 1000;
         Ellatype = "Sad";
         $(".Sad").css("display", "block");
+        hidePreviousElla();
         changeInventory();
         changeMarket();
     });
@@ -60,6 +60,7 @@ $(document).ready(function(){
         autopointPlus += 10;
         autopointSpeed += 5000;
         Ellatype = "Happy";
+        hidePreviousElla();
         $(".Happy").css("display", "block");
         changeInventory();
         changeMarket();
@@ -69,6 +70,7 @@ $(document).ready(function(){
         autopointPlus += 100;
         autopointSpeed += 10000;
         Ellatype = "Confused";
+        hidePreviousElla();
         $(".Confused").css("display", "block");
         changeInventory();
         changeMarket();
@@ -78,6 +80,7 @@ $(document).ready(function(){
         autopointPlus += 1000;
         autopointSpeed += 15000;
         Ellatype = "Suprised";
+        hidePreviousElla();
         $(".Suprised").css("display", "block");
         changeInventory();
         changeMarket();
@@ -87,6 +90,7 @@ $(document).ready(function(){
         autopointPlus += 10000;
         autopointSpeed += 20000;
         Ellatype = "Disapointed";
+        hidePreviousElla();
         $(".Disapointed").css("display", "block");
         changeInventory();
         changeMarket();
@@ -153,35 +157,9 @@ $(document).ready(function(){
         }
        
     }
-
-
-
-
-        function switchMenu(menu){
+    function switchMenu(menu){
             $(".menus").children().css("display", "none");
             $("." + menu).css("display", "block");
             return menu;
-        }
-        function showSad(){
-            var Sad = document.getElementById('Sad');
-            Sad.style.display = 'block';
-          }
-        function showHappy(){
-            var Happy = document.getElementById('Happy');
-            Happy.style.display = 'block';
-          }
-        function showConfused(){
-            var Confused = document.getElementById('Confused');
-            Confused.style.display = 'block';
-          }
-        function showSuprised(){
-            var Suprised = document.getElementById('Suprised');
-            Suprised.style.display = 'block';
-          }
-        function showDisapointed(){
-            var Disapointed = document.getElementById('Disapointed');
-            Disapointed.style.display = 'block';
-          }
-
     }
-);
+})
